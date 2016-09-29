@@ -10,7 +10,7 @@ app.get('/', function (req, res) {
 });
 
 var articles = {
-    articleOne : {
+    'article-one' : {
         title : 'Article One | Nathan',
         heading : 'Article One',
         date : '29<sup>th</sup> September, 2016',
@@ -25,7 +25,7 @@ var articles = {
                 This is the content for article one. This is the content for article one. This is the content for article one. This is the content for article one. This is the content for article one. This is the content for article one. This is the content for article one. This is the content for article one. This is the content for article one. This is the content for article one. This is the content for article one. This is the content for article one. 
             </p>    `
     },
-    articleTwo : {
+    'article-two' : {
         title : 'Article Two | Nathan',
         heading : 'Article Two',
         date : '29<sup>th</sup> September, 2016',
@@ -40,7 +40,7 @@ var articles = {
                 This is the content for article Two. This is the content for article Two. This is the content for article Two. This is the content for article Two. This is the content for article Two. This is the content for article Two. This is the content for article Two. This is the content for article Two. This is the content for article Two. This is the content for article Two. This is the content for article Two. This is the content for article Two. This is the content for article Two. 
             </p>   `
 },
-    articleThree : {
+    'article-three' : {
         title : 'Article Three | Nathan',
         heading : 'Article Three',
         date : '29<sup>th</sup> September, 2016',
@@ -92,12 +92,12 @@ function createTemplate(data) {
 }
 
 
-app.get('/article-one', function (req, res) {
+app.get('/:articleName', function (req, res) {
     res.send(createTemplate(articles[1]));
 });
 
 app.get('/article-two', function (req, res) {
-    res.send(createTemplate(articles[2]));
+    res.send(createTemplate(articles[articleName]));
 });
 
 app.get('/article-three', function (req, res) {

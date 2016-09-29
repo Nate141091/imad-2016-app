@@ -93,15 +93,8 @@ function createTemplate(data) {
 
 
 app.get('/:articleName', function (req, res) {
-    res.send(createTemplate(articles[1]));
-});
-
-app.get('/article-two', function (req, res) {
+    var articleName = req.params.articleName;
     res.send(createTemplate(articles[articleName]));
-});
-
-app.get('/article-three', function (req, res) {
-    res.send(createTemplate(articles[3]));
 });
 
 app.get('/ui/style.css', function (req, res) {

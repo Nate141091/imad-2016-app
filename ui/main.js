@@ -1,14 +1,12 @@
-console.log('Loaded!');
-var element = document.getElementById('maintxt');
-element.innerHTML = 'Text has been changed!'
-
-var img = document.getElementById('madi');
-var lmargin = 0;
-function moveRight() {
-    lmargin = lmargin + 1;
-    img.style.marginLeft = lmargin + 'px';
-}
-img.onclick = function() {
-    var interval = setInterval(moveRight, 50);
-    //img.align = 'right';  
+var button = document.getElementById('counter');
+var counter = 0;
+button.onclick = function() {
+    //req counter endpoint
+    
+    //get response and store it in a var
+    
+    //put it in the right place
+    counter = counter + 1;
+    var span = document.getElementById('span');
+    span.innerHTML = counter.toString();
 }

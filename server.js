@@ -26,6 +26,38 @@ var articleOne = {
         </p>    `
 };
 
+var articleTwo = {
+    title : 'Article Two | Nathan',
+    heading : 'Article Two',
+    date : '29<sup>th</sup> September, 2016',
+    content : `
+        <p>
+            This is the content for article Two. This is the content for article Two. This is the content for article Two. This is the content for article Two. This is the content for article Two. This is the content for article Two. This is the content for article Two. This is the content for article Two. This is the content for article Two. This is the content for article Two. This is the content for article Two. This is the content for article Two. This is the content for article Two. 
+        </p>
+        <p>
+            This is the content for article Two. This is the content for article Two. This is the content for article Two. This is the content for article Two. This is the content for article Two. This is the content for article Two. This is the content for article Two. This is the content for article Two. This is the content for article Two. This is the content for article Two. This is the content for article Two. This is the content for article Two. This is the content for article Two. 
+        </p>
+        <p>
+            This is the content for article Two. This is the content for article Two. This is the content for article Two. This is the content for article Two. This is the content for article Two. This is the content for article Two. This is the content for article Two. This is the content for article Two. This is the content for article Two. This is the content for article Two. This is the content for article Two. This is the content for article Two. This is the content for article Two. 
+        </p>   `
+};
+
+var articleThree= {
+    title : 'Article Three | Nathan',
+    heading : 'Article Three',
+    date : '29<sup>th</sup> September, 2016',
+    content : `
+        <p>
+            This is the content for article three. This is the content for article three. This is the content for article three. This is the content for article three. This is the content for article three. This is the content for article three. This is the content for article three. This is the content for article three. This is the content for article three. This is the content for article three. This is the content for article three. This is the content for article three. 
+        </p>
+        <p>
+            This is the content for article three. This is the content for article three. This is the content for article three. This is the content for article three. This is the content for article three. This is the content for article three. This is the content for article three. This is the content for article three. This is the content for article three. This is the content for article three. This is the content for article three. This is the content for article three. 
+        </p>
+        <p>
+            This is the content for article three. This is the content for article three. This is the content for article three. This is the content for article three. This is the content for article three. This is the content for article three. This is the content for article three. This is the content for article three. This is the content for article three. This is the content for article three. This is the content for article three. This is the content for article three. 
+        </p>    `
+};
+
 function createTemplate(data) {
     var title = data.title;
     var heading = data.heading;
@@ -62,15 +94,15 @@ function createTemplate(data) {
 
 
 app.get('/article-one', function (req, res) {
- res.send(createTemplate(articleOne));
+    res.send(createTemplate(articleOne));
 });
 
 app.get('/article-two', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
+    res.send(createTemplate(articleTwo));
 });
 
 app.get('/article-three', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'article-three.html'));
+    res.send(createTemplate(articleThree));
 });
 
 app.get('/ui/style.css', function (req, res) {

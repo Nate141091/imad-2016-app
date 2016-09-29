@@ -11,7 +11,7 @@ app.get('/', function (req, res) {
 
 
 var articleOne = {
-    title : 'Article One',
+    title : 'Article One | Nathan',
     heading : 'Article One',
     date : '29<sup>th</sup> September, 2016',
     content : `
@@ -23,8 +23,7 @@ var articleOne = {
         </p>
         <p>
             This is the content for article one. This is the content for article one. This is the content for article one. This is the content for article one. This is the content for article one. This is the content for article one. This is the content for article one. This is the content for article one. This is the content for article one. This is the content for article one. This is the content for article one. This is the content for article one. 
-        </p>
-    `
+        </p>    `
 };
 
 function createTemplate(data) {
@@ -37,7 +36,7 @@ function createTemplate(data) {
         <html>
             <head>
                 <title>
-                    $(title)
+                ${title}
                 </title>
                 <meta name='viewport' content='width-device-width, initial-scale-1' /> 
                 <link href="/ui/style.css" rel="stylesheet" />
@@ -50,14 +49,10 @@ function createTemplate(data) {
                     </div>
                     <hr/>
                     <div>
-                        <h2>$(heading)</h2>
+                        <h2>${heading}</h2>
                     </div>
-                    <div>
-                        $(date)
-                    </div>
-                    <div>
-                        $(content)
-                    </div>
+                    <div>${date}</div>
+                    <div>${content}</div>
                 </div>
             </body>
         </html> 

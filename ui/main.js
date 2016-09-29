@@ -17,6 +17,6 @@ button.onclick = function() {
     };
     
     //make req
-    req.OPEN('GET','http://nate141091.imad.hasura-app.io/counter',true);
+    req.open('GET','http://nate141091.imad.hasura-app.io/counter',true);
     req.send(null);
 };

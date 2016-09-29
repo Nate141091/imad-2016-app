@@ -3,6 +3,7 @@ var element = document.getElementById('maintxt');
 element.innerHTML = 'Text has been changed!'
 
 var img = document.getElementById('madi');
+var lmargin = 0;
 function moveRight() {
     lmargin = lmargin + 10;
     img.style.marginLeft = lmargin + 'px';

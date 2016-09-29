@@ -23,8 +23,7 @@ button.onclick = function() {
 };
 
 //NAME
-var nameip = document.getElementById('name');
-var name = nameip.value;
+
 var submit = document.getElementById('submitbtn');
 submit.onclick = function() {
     //req counter endpoint
@@ -50,8 +49,8 @@ submit.onclick = function() {
     };
     
     //make req
-                req.open('GET','http://nate141091.imad.hasura-app.io/submit-name?name='+name,true);
-                req.send(null);
-                
-                
+    var nameip = document.getElementById('name');
+    var name = nameip.value;
+    req.open('GET','http://nate141091.imad.hasura-app.io/submit-name?name='+name,true);
+    req.send(null);
 };

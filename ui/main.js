@@ -24,7 +24,7 @@ button.onclick = function() {
 
 //NAME
 var nameip = document.getElementById('name');
-var name = nameip.value;
+var nameval = nameip.value;
 var submit = document.getElementById('submitbtn');
 submit.onclick = function() {
     var names = ['name1','name2','name3','name4'];

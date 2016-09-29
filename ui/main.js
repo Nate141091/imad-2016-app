@@ -3,12 +3,11 @@ button.onclick = function() {
     //req counter endpoint
     var req = new XMLHttpRequest();
     
-    
     //get response and store it in a var
     req.onreadystatechange = function() {
-        if(req.readyState == XMLHttpRequest.DONE)
+        if(req.readyState === XMLHttpRequest.DONE)
         {
-            if(req.status == 200)
+            if(req.status === 200)
             {
                 var counter = req.responseText;
                 var span = document.getElementById('count');

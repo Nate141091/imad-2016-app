@@ -5,10 +5,10 @@ element.innerHTML = 'Text has been changed!'
 var img = document.getElementById('madi');
 var lmargin = 0;
 function moveRight() {
-    lmargin = lmargin + 10;
+    lmargin = lmargin + 1;
     img.style.marginLeft = lmargin + 'px';
 }
 img.onclick = function() {
-    var interval = setInterval(moveRight, 100);
+    var interval = setInterval(moveRight, 50);
     //img.align = 'right';  
 }

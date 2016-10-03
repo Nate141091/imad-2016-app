@@ -22,12 +22,12 @@ body {
 	padding: 10px 15% 10px 15%;
 }
 
-ul#nav{
+#nav{
 	list-style-type:none;
 	padding:15 0 20 0;
 }
 
-ul#nav li{
+#nav li{
 	display:inline;
 	text-align:center;
 	padding-right:25px;

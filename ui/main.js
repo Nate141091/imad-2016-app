@@ -49,10 +49,10 @@ submit.onclick = function() {
     };
     
     //make req
-    //var nameip = document.getElementById('name');
-    //var name = nameip.value;
-    var commip = document.getElementById('comment');
-    var comm = commip.value;
-    req.open('GET','http://nate141091.imad.hasura-app.io/submit-comm?comment='+comm,true);
+    var nameip = document.getElementById('name');
+    var name = nameip.value;
+    //var commip = document.getElementById('comment');
+    //var comm = commip.value;
+    req.open('GET','http://nate141091.imad.hasura-app.io/submit-name?name='+comm,true);
     req.send(null);
 };

@@ -51,8 +51,8 @@ submit.onclick = function() {
     //make req
     var nameip = document.getElementById('name');
     var name = nameip.value;
-    //var commip = document.getElementById('comment');
-    //var comm = commip.value;
-    req.open('GET','http://nate141091.imad.hasura-app.io/submit-name?name='+comm,true);
+    var commip = document.getElementById('comment');
+    var comm = commip.value;
+    req.open('GET','http://nate141091.imad.hasura-app.io/submit-comm?name='+name+'comment='+comm,true);
     req.send(null);
 };

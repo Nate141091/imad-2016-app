@@ -1,0 +1,51 @@
+/* CSS Document */
+#container {
+	width:70%;
+	padding: 10px 15% 10px 15%;
+}
+
+#header {
+	padding: 15px 15% 15px 15%;
+	font-family:Cinzel;
+	font-size:40px;
+	font-weight:bold;
+}
+
+body {
+	background-color:#000000;
+	color:#FFFFFF;
+}
+
+#content {
+	font-family:Raleway;
+	font-size:20px;
+	padding: 10px 15% 10px 15%;
+}
+
+ul#nav{
+	list-style-type:none;
+	padding:15 0 20 0;
+}
+
+ul#nav li{
+	display:inline;
+	text-align:center;
+	padding-right:25px;
+	
+}
+
+#nav a{
+	text-decoration:none;
+	color:white;
+	font-family:Raleway;
+}
+
+#input_comm {
+	padding: 15 10 15 0;
+	font-family:Raleway;
+	font-size:16px;
+}
+
+p {
+	text-align:justify;
+}

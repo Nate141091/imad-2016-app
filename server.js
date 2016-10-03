@@ -6,14 +6,51 @@ var app = express();
 app.use(morgan('combined'));
 
 app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'MainProfile.html'));
+  res.sendFile(path.join(__dirname, 'Profile', 'MainProfile.html'));
 });
 
 var articles = {
-    'edu' : {
-        title : 'Educational Details',
-        header : 'Education',
-        content : ``
+    'Education' : {
+        title : 'Education',
+        header : 'Educational Details',
+        content : `
+			<table id="data" cellpadding="5" cellspacing="5">
+				<tr>
+					<td><strong>Sr.No.</strong></td>
+					<td><strong>Level</strong></td>
+					<td><strong>School/College</strong></td>
+					<td><strong>Grade/Percentage</strong></td>
+					<td><strong>Graduation Year</strong></td>
+				</tr>
+				<tr>
+					<td>1.</td>
+					<td>M.E.</td>
+					<td>St. Francis Institute of Technology</td>
+					<td>8.59 (10)</td>
+					<td>2016</td>
+				</tr>
+				<tr>
+					<td>2.</td>
+					<td>B.E.</td>
+					<td>St. Francis Institute of Technology</td>
+					<td>68.07%</td>
+					<td>2013</td>
+				</tr>
+				<tr>
+					<td>3.</td>
+					<td>HSC</td>
+					<td>Wilson College</td>
+					<td>87.17%</td>
+					<td>2009</td>
+				</tr>
+				<tr>
+					<td>4.</td>
+					<td>SSC</td>
+					<td>St. Francis D Assisi High School</td>
+					<td>83.23%</td>
+					<td>2007</td>
+				</tr>
+			</table>	`
     },
     'prof' : {
         title : 'Professional Details',

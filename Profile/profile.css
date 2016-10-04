@@ -59,7 +59,8 @@ ul {
 }
 
 #comm_sec {
-    font-family:Alegreya;
+    width:70%;
+    font-family:Raleway;
 	font-size:16px;
 	background-color:#333333;
 }

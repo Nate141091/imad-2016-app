@@ -100,23 +100,25 @@ function createTemplate(data) {
 					</div>
 					<hr/><br/>
 					<div id="input_comm">
-						Please leave your name and comment below <br/>
-						<table border="0" cellspacing="5">
-							<tr>
-								<td>Name : </td>
-								<td><input type="text" id="name" title="name" /></td>
-							</tr>
-							<tr>
-								<td>Comment : </td>
-								<td><textarea rows="4" cols="30" id="comment"></textarea></td>
-							</tr>
-							<tr>
-								<td></td>
-								<td><input type="submit" name="Submit" /></td>					
-							</tr>
-						</table>
-					</div>
-					<div id="comm_sec" align="left">
+                        Please leave your name and comment below <br/>
+                        <table border="0" cellspacing="5">
+                        <tr>
+                        <td>Name : </td>
+                        <td><input type="text" id="name" title="name" /></td>
+                        </tr>
+                        <tr>
+                        <td>Comment : </td>
+                        <td><textarea rows="4" cols="30" id="comment"></textarea></td>
+                        </tr>
+                        <tr>
+                        <td></td>
+                        <td><input id="submit" type="submit" name="Submit" /></td>					
+                        </tr>
+                        </table>
+                    </div>
+                    <br/>
+                    
+                    <div id="comm_sec" align="left">
                         Comments:
                         <ul id="comments" style="list-style-type:none">
                         </ul>

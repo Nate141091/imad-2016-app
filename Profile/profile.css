@@ -55,7 +55,8 @@ p {
     font-family:Alegreya;
 	font-size:14px;
 	background-color:#333333;
-	padding: 20 5 5 5;
+	padding: 10 5 5 5;
+	width:80%;
 }
 
 #comm_sec {

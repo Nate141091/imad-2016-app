@@ -30,8 +30,7 @@ body {
 #nav li{
 	display:inline;
 	text-align:center;
-	padding-right:25px;
-	
+	padding: 5 10 5 10;
 }
 
 #nav a{

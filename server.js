@@ -16,11 +16,11 @@ var articles = {
         content : `
 			<table id="data" cellpadding="5" cellspacing="5">
 				<tr>
-					<td><strong>Sr.No.</strong></td>
-					<td><strong>Level</strong></td>
-					<td><strong>School/College</strong></td>
-					<td><strong>Grade/Percentage</strong></td>
-					<td><strong>Graduation Year</strong></td>
+					<th><strong>Sr.No.</strong></th>
+					<th><strong>Level</strong></th>
+					<th><strong>School/College</strong></th>
+					<th><strong>Grade/Percentage</strong></th>
+					<th><strong>Graduation Year</strong></th>
 				</tr>
 				<tr>
 					<td>1.</td>
@@ -55,7 +55,9 @@ var articles = {
     'prof' : {
         title : 'Professional Details',
         header : 'Professional Experience',
-        content : ``
+        content : `
+            
+        `
 	},
     'courses' : {
         title : 'Courses',

@@ -52,14 +52,14 @@ p {
 #comments ul {
     list-style-type:none;
     font-family:Alegreya;
-	font-size:14px;
+	font-size:16px;
 	background-color:#333333;
 	padding: 10 5 5 5;
 }
 
 #comments li {
     font-family:Alegreya;
-	font-size:12px;
+	font-size:14px;
 	padding: 5 10 5 5;
 }
 

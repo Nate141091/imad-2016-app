@@ -116,10 +116,11 @@ function createTemplate(data) {
 							</tr>
 						</table>
 					</div>
-					<div id="comments" align="left">
-						<ul style="list-style-type:none">
-						</ul>
-					</div>	
+					<div id="comm_sec" align="left">
+                        Comments:
+                        <ul id="comments" style="list-style-type:none">
+                        </ul>
+                    </div>	
 					<script type="text/javascript" src="/ui/main.js">
 					</script>
 				</div>

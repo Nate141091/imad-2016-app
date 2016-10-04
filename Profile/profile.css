@@ -60,12 +60,12 @@ p {
 #comments li {
     font-family:Alegreya;
 	font-size:16px;
-	padding: 5 10 5 10;
+	padding: 5 5 5 5;
 }
 
 #comm_sec {
     font-family:Raleway;
 	font-size:16px;
 	background-color:#333333;
-	padding: 10 15 5 15;
+	padding: 10 15% 5 15%;
 }

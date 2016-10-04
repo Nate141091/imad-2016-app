@@ -40,7 +40,7 @@ submit.onclick = function() {
                 var list = '';
                 for(var i=0; i<names.length; i++)
                 {
-                    list = '<li>'+names[i]+'</li><br/>&nbsp;&nbsp;' + list;
+                    list = '<li>'+names[i]+'</li>' + list;
                 }
                 var ul = document.getElementById('comments');
                 ul.innerHTML=list;    

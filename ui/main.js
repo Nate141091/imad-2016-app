@@ -53,6 +53,6 @@ submit.onclick = function() {
     var name = nameip.value;
     var commip = document.getElementById('comment');
     var comm = commip.value;
-    req.open('GET','http://nate141091.imad.hasura-app.io/submit-name?name='+name+'<br/>'+comm,true);
+    req.open('GET','http://nate141091.imad.hasura-app.io/submit-name?name='+name+': '+comm,true);
     req.send(null);
 };

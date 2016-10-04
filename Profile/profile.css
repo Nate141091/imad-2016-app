@@ -50,7 +50,7 @@ p {
 	text-align:justify;
 }
 
-ul {
+#comments ul {
     list-style-type:none;
     font-family:Alegreya;
 	font-size:14px;
@@ -64,4 +64,6 @@ ul {
 	font-size:16px;
 	background-color:#333333;
 	padding: 10 15% 5 15%;
+	margin-left:15%;
+	margin-right:15%;
 }

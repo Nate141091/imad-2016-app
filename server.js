@@ -108,7 +108,7 @@ function createTemplate(data) {
 							</tr>
 							<tr>
 								<td>Comment : </td>
-								<td><textarea rows="4" cols="50" id="comment"></textarea></td>
+								<td><textarea rows="4" cols="30" id="comment"></textarea></td>
 							</tr>
 							<tr>
 								<td></td>

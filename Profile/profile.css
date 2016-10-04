@@ -49,3 +49,9 @@ body {
 p {
 	text-align:justify;
 }
+
+#comments ul {
+    list-style-type:none;
+    font-family:Raleway;
+	font-size:14px;
+}

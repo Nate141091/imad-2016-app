@@ -50,7 +50,7 @@ p {
 	text-align:justify;
 }
 
-#comments ul {
+ul {
     list-style-type:none;
     font-family:Raleway;
 	font-size:14px;

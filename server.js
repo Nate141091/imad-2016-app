@@ -148,7 +148,7 @@ app.get('/:articleName', function (req, res) {
 });
 
 app.get('/Profile/profile.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'style.css'));
+  res.sendFile(path.join(__dirname, 'Profile', 'profile.css'));
 });
 
 app.get('/ui/main.js', function (req, res) {

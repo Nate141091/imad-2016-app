@@ -1,4 +1,4 @@
-//COUNTER
+/*/COUNTER
 var button = document.getElementById('counter');
 button.onclick = function() {
     //req counter endpoint
@@ -20,11 +20,11 @@ button.onclick = function() {
     //make req
     req.open('GET','http://nate141091.imad.hasura-app.io/counter',true);
     req.send(null);
-};
+};*/
 
-//NAME
+//NAME and COMMENT
 
-var submit = document.getElementById('submitbtn');
+var submit = document.getElementById('submit');
 submit.onclick = function() {
     //req counter endpoint
     var req = new XMLHttpRequest();

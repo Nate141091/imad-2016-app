@@ -30,7 +30,7 @@ body {
 #nav li{
 	display:inline;
 	text-align:center;
-	padding: 5 10 5 10;
+	padding-right:15px;
 }
 
 #nav a{
@@ -55,6 +55,12 @@ p {
 	font-size:14px;
 	background-color:#333333;
 	padding: 10 5 5 5;
+}
+
+#comments li {
+    font-family:Alegreya;
+	font-size:12px;
+	padding: 5 10 5 5;
 }
 
 #comm_sec {

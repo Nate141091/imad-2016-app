@@ -24,7 +24,7 @@ button.onclick = function() {
 
 //NAME and COMMENT
 
-var submit = document.getElementById('submit');
+var submit = document.getElementById('submitbtn');
 submit.onclick = function() {
     //req counter endpoint
     var req = new XMLHttpRequest();
@@ -40,7 +40,7 @@ submit.onclick = function() {
                 var list = '';
                 for(var i=0; i<names.length; i++)
                 {
-                    list = '<li>'+names[i]+'</li>' + list;
+                    list += '<li>'+names[i]+'</li>';
                 }
                 var ul = document.getElementById('comments');
                 ul.innerHTML=list;    
@@ -51,8 +51,6 @@ submit.onclick = function() {
     //make req
     var nameip = document.getElementById('name');
     var name = nameip.value;
-    var commip = document.getElementById('comment');
-    var comm = commip.value;
-    req.open('GET','http://nate141091.imad.hasura-app.io/submit-name?name=<strong>'+name+'</strong><br/>'+comm,true);
+    req.open('GET','http://nate141091.imad.hasura-app.io/submit-name?name='+name,true);
     req.send(null);
 };

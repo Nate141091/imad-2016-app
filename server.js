@@ -98,7 +98,7 @@ function createTemplate(data) {
 					<div id="content">
 						${content}
 					</div>
-					<hr/><br/>
+					<hr/>
 					<div id="input_comm">
                         Please leave your name and comment below <br/>
                         <table border="0" cellspacing="5">
@@ -116,7 +116,7 @@ function createTemplate(data) {
                         </tr>
                         </table>
                     </div>
-                    <br/>
+                    <hr/>
                     
                     <div id="comm_sec" align="left">
                         Comments:
